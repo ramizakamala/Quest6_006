@@ -53,29 +53,6 @@ fun RencanaStudyView(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(16.dp), verticalAlignment = Alignment.CenterVertically
-        ) {
-            Image(
-                painter = painterResource(id = R.drawable.images),
-                contentDescription = "",
-                modifier = Modifier
-                    .clip(shape = CircleShape)
-                    .size(50.dp)
-            )
-            Spacer(modifier = Modifier.padding(start = 16.dp))
-            Column (modifier = Modifier.weight(1f)){
-                Text(
-                    text = mahasiswa.nama,
-                    fontWeight = FontWeight.Bold,
-                    fontSize = 15.sp,
-                    color = Color.White
-                )
-                Text(
-                    text = mahasiswa.nim,
-                    fontWeight = FontWeight.Light,
-                    fontSize = 12.sp,
-                    color = Color.White
-                )
-            }
-        }
+
     }
 }
